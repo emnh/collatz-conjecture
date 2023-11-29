@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from collatz import collatz_cycle
 from collatz import get_first_n_cycles
 from collatz import list_to_latex
