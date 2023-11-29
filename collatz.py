@@ -26,9 +26,10 @@ def list_to_latex(items):
 
     return latex_list
 
-cycles = get_first_n_cycles(20)
-sumlist = []
-for c in cycles:
-    sumlist.append(' '.join([''.join(str(x)) for x in c]))
-latexstr = list_to_latex(sumlist)
-print(latexstr)
+def list_first_20():
+    cycles = get_first_n_cycles(20)
+    sumlist = []
+    for c in cycles:
+        sumlist.append(' '.join([''.join(str(x)) for x in c]))
+    latexstr = list_to_latex(sumlist)
+    print(latexstr)
